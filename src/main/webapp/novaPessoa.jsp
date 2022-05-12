@@ -14,7 +14,7 @@
 	<form action="${pessoa}" method="post">
 		Nome Completo: <input type="text" name="nome">
 		CPF: <input type="text" name="cpf">
-		Data de Nascimento: <input type="text" name="data">
+		<!--Data de Nascimento: <input type="text" name="data">-->
 		Endereço: <input type="text" name="endereco">
 		E-mail: <input type="text" name="email">
 		Celular: <input type="text" name="celular">

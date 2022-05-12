@@ -1,15 +1,30 @@
-package br.com.keytime.cadastroPessoal.servlet;
+package br.com.keytime.cadastroPessoal.modelo;
 
 import java.util.Date;
 
 public class Pessoa {
 
+	private Integer id;
 	private String nome;
 	private String CPF;
 	private Date dataNasc;
 	private String endereco;
 	private String telefone;
+	private String email;
 	
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getNome() {
 		return nome;
 	}
