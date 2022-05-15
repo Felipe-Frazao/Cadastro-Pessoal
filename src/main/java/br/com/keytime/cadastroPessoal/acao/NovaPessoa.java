@@ -1,6 +1,7 @@
 package br.com.keytime.cadastroPessoal.acao;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,7 +26,9 @@ public class NovaPessoa{
 		
 		banco.adiciona(pessoa);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/novaPessoa.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/listagemPessoa.jsp");
+		List<Pessoa> listaP = banco.getPessoa();
+		request.setAttribute("Pessoas", listaP );
 		rd.forward(request, response);
 		
 	}

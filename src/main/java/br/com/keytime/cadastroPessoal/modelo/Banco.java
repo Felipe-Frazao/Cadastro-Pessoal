@@ -10,12 +10,16 @@ public class Banco {
 	
 	public void adiciona(Pessoa pessoa) {
 		pessoa.setId(Banco.chaveSequencial++);
-		Banco.lista.add(pessoa);	
+		Banco.lista.add(pessoa);
 		
 		for (Pessoa p : lista) {
 			System.out.println(p.getId());
 			System.out.println(p.getNome());
 		}
 		
+	}
+
+	public List<Pessoa> getPessoa() {
+		return Banco.lista;
 	}
 }
