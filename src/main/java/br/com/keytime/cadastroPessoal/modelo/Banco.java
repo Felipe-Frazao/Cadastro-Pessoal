@@ -12,5 +12,10 @@ public class Banco {
 		pessoa.setId(Banco.chaveSequencial++);
 		Banco.lista.add(pessoa);	
 		
+		for (Pessoa p : lista) {
+			System.out.println(p.getId());
+			System.out.println(p.getNome());
+		}
+		
 	}
 }

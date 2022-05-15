@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.keytime.cadastroPessoal.acao.NovaPessoa;
 
-@WebServlet("/")
+@WebServlet("/novaPessoa")
 public class Principal extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -23,8 +23,6 @@ public class Principal extends HttpServlet {
 		if(url.equals("/Cadastro-Pessoal/novaPessoa")) {
 			NovaPessoa np = new NovaPessoa();
 			np.executa(request, response);
-		}else {
-			System.out.println("Nada");
 		}
 	}
 }
